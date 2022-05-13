@@ -105,7 +105,6 @@ header nav .menu{
     padding-top: 0.625;
     text-align: center;
 }
-/* INICIO MENU-------------------------------- */
 
 
 header nav .menu a{ 
@@ -125,10 +124,44 @@ header nav .menu :is(.activo, a:hover){
     color: var(--colorPrincipal);
 }
 
+header nav:after{
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+/* final header------------------------- */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--colorSecundario);
+    color: white;
+    padding: var(--marginGrid);
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--colorPrincipal)
+}
+
+.arriba{
+    position:fixed;
+    bottom: 50px;
+    right: 10px;
+    font-size: 2em;
+}
+
+.arriba a{
+    color: var(--colorPrincipal);
+}
 
 
-/* FINAL MENU */
-/* FINAL HEADER */
 /* MEDIAQUERYS ------------------------------ */
 /* breakpoint 768px */
 @media(min-width: 48em){
