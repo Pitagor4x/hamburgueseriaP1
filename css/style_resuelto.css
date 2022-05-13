@@ -77,62 +77,55 @@ header nav{
 }
 
 
-        /* HEADER-LOGO------ */
 
-figure{
-    width: 90px;
-    margin: var(--marginGrid);
+header nav .logo{
+    max-width: 100px;
+    float:left
     
-
 }
 
 
 
-        /*HEADER-HAMBURGUESA------------ */
-
-.hamburguesa{
-    width: 25px;
-    height: 25px;
-    margin: var(--marginGrid);
+header nav .hamburguesa{
     float: right;
+    cursor: pointer;
+    width: 2em;
     
 }
 
-.hamburguesa>div{
+header nav .hamburguesa>div{
     border-bottom: solid 2px grey;
-    width: 100%;
-    /* height: 33.333%; */
-    margin-bottom: 0.5em; /* 7px */
+    
+    margin-bottom: 0.625em; 
 }
 
-/* FINAL HAMBURGUESA */
 
-.container>ul{
-    width: 100%;
+header nav .menu{
+    clear:both;
+    padding-top: 0.625;
+    text-align: center;
 }
 /* INICIO MENU-------------------------------- */
 
-.menu{
-    width: 100%;
-    text-align: center;
-    padding: 1em;
-    border: 1px solid black
-}
-.menu>li>a{
+
+header nav .menu a{ 
     display: block;
     text-decoration: none;
-    padding: 1em
+    padding: var(--marginGrid);
+    color: #aaa;
+    border-bottom: 1px solid #aaa; 
 }
 
-.menu>li:first-child{
-    border-bottom: 1px solid grey;
+
+header nav .menu li:last-child a{
+    border: 0px;
 }
-.menu>li:nth-child(2){
-    border-bottom: 1px solid grey;
+
+header nav .menu :is(.activo, a:hover){
+    color: var(--colorPrincipal);
 }
-.menu>li:nth-child(3){
-    border-bottom: 1px solid grey;
-}
+
+
 
 /* FINAL MENU */
 /* FINAL HEADER */
@@ -145,5 +138,26 @@ figure{
 
     header .nav_top .container{
         justify-content: space-between;
+    }
+}
+    /* breakpoint 1004px */
+@media(min-width: 62.750em){
+    header nav .hamburguesa{
+        display: none;
+    }
+    header nav .menu{
+        float: right;
+        padding-top: 0;
+        clear: none;
+    }
+
+    header nav .menu li{
+        display: inline-block;
+    }
+
+    header nav .menu a{
+        border: 0px;
+        padding: 0.4em 0em 0.4em 2.5em;
+        
     }
 }
