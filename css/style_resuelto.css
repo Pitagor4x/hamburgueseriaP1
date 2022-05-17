@@ -311,6 +311,81 @@ section p{
 }
 /* FINAL OUR SERVICES */
 
+/* --------------------------------------------------------INICIO OUR BLOGS */
+
+    #ourblogs .underline{
+        margin-bottom: var(--marginGrid);
+    }
+
+    #ourblogs .flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    
+    .blogs{
+        margin: var(--marginGrid);
+        width: calc(50% - 2*var(--marginGrid))
+    }
+
+    #ourblogs .blogs .blogs_img{
+        position: relative;
+    }
+
+    #ourblogs .blogs .blogs_img>div{
+        position: absolute;
+        background-color: rgba(250, 87, 58, 0.80);
+        width: 60px;
+        height: 60px;
+        color: white;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        line-height: 1.5em;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .container_blogs{
+        width: 95%;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    #ourblogs h3{
+        font-weight: bold;
+        padding-top: var(--marginGrid);
+    }
+    #ourblogs h4{
+        color: var(--colorPrincipal);
+        font-size: 0.8em;
+        font-weight: bold;
+        padding: var(--marginGrid) 0;
+    }
+    
+    #ourblogs .container_blogs>a{
+        text-decoration: none;
+        color: var(--colorPrincipal);
+        font-weight: bold;
+        font-size: 0.8em;
+        
+    }
+
+    #ourblogs .container_blogs>a:hover i{
+        transform: translateX(5px); 
+        transition: 0.3s;
+    }
+
+
+
+
+
+/* -------------------------------------------------------FINAL OUR BLOGS */
 
 
 /* MEDIAQUERYS ------------------------------ */
@@ -336,7 +411,17 @@ section p{
         border-bottom: 0px;
         border-left: 1px solid #aaa;
     }
+
+    #ourblogs .flex{
+        flex-wrap: nowrap;
+       
+        
+    }
+
 }
+
+
+
     /* breakpoint 1004px */
 @media(min-width: 62.750em){
     header nav .hamburguesa{
