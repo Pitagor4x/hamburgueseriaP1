@@ -307,6 +307,12 @@ section p{
     color: var(--colorPrincipal);
     font-weight: 700;
 }
+
+.enlace:hover i{
+    transform: translateX(5px); 
+    transition: 0.3s;
+}
+
 /* FINAL OUR SERVICES */
 
 /* --------------------------------------------------------INICIO OUR BLOGS */
