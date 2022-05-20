@@ -416,11 +416,14 @@ section p{
 }
 
 #todaysmenu article{
-    line-height: 2em
+    line-height: 2em;
+    border:none
+
 }
 
-#todaysmenu article p{
+#todaysmenu article span{
     color: var(--colorPrincipal);
+    padding: 0 var(--marginGrid);
 }
 
 
@@ -448,8 +451,7 @@ section p{
 
 #todaysmenu article a:hover i{
     transform: translateX(5px); 
-        transition: 0.3s;
-
+    transition: 0.3s;
 }
 
 #todaysmenu article h3{
@@ -459,6 +461,14 @@ section p{
 #todaysmenu sub{
     color: white;
 }
+
+#todaysmenu .container_art{
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+
 
 
 
@@ -489,12 +499,10 @@ section p{
     }
 
     #ourblogs .flex{
-        flex-wrap: nowrap;
-       
-        
+        flex-wrap: nowrap;  
     }
 
-}
+
 
 
 
@@ -526,4 +534,32 @@ section p{
     #ourservices .grid article:last-child{
         grid-column: 3/4;
     }
+
+    
+    #todaysmenu .container .grid_menu{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 50% 50%;
+    }
+
+    #todaysmenu .offers{
+        grid-row: 2/3;
+        
+    }
+
+    .container_art{
+        grid-row: 1/3;
+    }
+
+    #todaysmenu article>div{
+        display: flex;
+        
+
+    }
+    
+    #todaysmenu .container_art img{
+        width: 25%;
+        padding: var(--marginGrid);
+    }
+}
 }
