@@ -76,15 +76,11 @@ header nav{
     padding: var(--marginGrid);
 }
 
-
-
 header nav .logo{
     max-width: 100px;
     float:left
     
 }
-
-
 
 header nav .hamburguesa{
     float: right;
@@ -99,13 +95,11 @@ header nav .hamburguesa>div{
     margin-bottom: 0.625em; 
 }
 
-
 header nav .menu{
     clear:both;
     padding-top: 0.625;
     text-align: center;
 }
-
 
 header nav .menu a{ 
     display: block;
@@ -114,7 +108,6 @@ header nav .menu a{
     color: #aaa;
     border-bottom: 1px solid #aaa; 
 }
-
 
 header nav .menu li:last-child a{
     border: 0px;
@@ -132,6 +125,7 @@ header nav:after{
 }
 
 /* final header------------------------- */
+
 footer{
     position: fixed;
     bottom: 0;
@@ -161,7 +155,6 @@ footer a:hover{
     color: var(--colorPrincipal);
 }
 
-
 /* INICIO HERO */
 
 .hero{
@@ -187,6 +180,7 @@ footer a:hover{
     font-size: 230%;
     color: white;
 }
+
 .hero :is(h2, .container>div){
     margin: var(--marginGrid) 0;
 }
@@ -215,6 +209,7 @@ footer a:hover{
     border: 1px solid var(--colorPrincipal);
     background-color: transparent;
 }
+
 .boton:hover i{
     transition: 0.5s;
     transform: translateX(5px);
@@ -236,6 +231,7 @@ footer a:hover{
 /* FINAL HERO */
 
 /* INICIO OUR SERVICES */
+
 section{
     padding:2.5em 0 4em 0
 }
@@ -246,6 +242,7 @@ section h2{
     font-size: 200%;
     text-align: center;
 }
+
 section h2 span{
     color: var(--colorPrincipal);
 }
@@ -265,6 +262,7 @@ section .underline hr{
     top:-1px;
     border-color: var(--colorPrincipal);
 }
+
 #ourservices .grid{
     display: grid;
     /* grid-template-columns */
@@ -275,17 +273,17 @@ section .underline hr{
     gap: var(--marginGrid);
     padding: 0 var(--marginGrid);
 }
+
 section article{
     padding: calc(var(--marginGrid)*2) 0;
     border-bottom: 1px solid #aaa;
 }
+
 section article h3{
     font-weight: 700;
     margin: 0.5em 0;
     font-size: 110%;
 }
-
-
 
 section p{
     color: #777;
@@ -361,6 +359,7 @@ section p{
         font-weight: bold;
         padding-top: var(--marginGrid);
     }
+
     #ourblogs h4{
         color: var(--colorPrincipal);
         font-size: 0.8em;
@@ -381,12 +380,89 @@ section p{
         transition: 0.3s;
     }
 
-
-
-
-
 /* -------------------------------------------------------FINAL OUR BLOGS */
 
+/* ----------------------------------------------------------INICIO TODAY´S MENU */
+
+#todaysmenu{
+    background-color: var(--colorSecundario);
+}
+
+#todaysmenu .container h2{
+    color: white;
+}
+
+#todaysmenu .container .grid_menu{
+    padding-top: 30px;
+}
+
+
+#todaysmenu .container .grid_menu>nav>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: var(--marginGrid);    
+}
+
+#todaysmenu .container .grid_menu>nav>a:hover{
+   background-color: var(--colorPrincipal);
+   border-radius: 5px; 
+}
+
+#todaysmenu h5{
+    color: white;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+#todaysmenu article{
+    line-height: 2em
+}
+
+#todaysmenu article p{
+    color: var(--colorPrincipal);
+}
+
+
+#todaysmenu .offers{
+    margin: 0 auto;
+    width: 90%;
+}
+
+#todaysmenu .offers hr{
+    border-color: var(--colorPrincipal);
+    width: 50px;
+    margin-left: 0;
+}
+
+#todaysmenu .offers p{
+    line-height: 1.5em;
+    color: white;
+}
+
+#todaysmenu article a{
+    display: block;
+    text-decoration: none;
+    color: var(--colorPrincipal);
+}
+
+#todaysmenu article a:hover i{
+    transform: translateX(5px); 
+        transition: 0.3s;
+
+}
+
+#todaysmenu article h3{
+    color: white;
+}
+
+#todaysmenu sub{
+    color: white;
+}
+
+
+
+/* ---------------------------------------------------------FINAL TODAYS MENU */
 
 /* MEDIAQUERYS ------------------------------ */
 /* breakpoint 768px */
