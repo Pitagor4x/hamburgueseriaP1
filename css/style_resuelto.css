@@ -562,10 +562,13 @@ section p{
         
 
     }
+
+    #todaysmenu article div>div{
+        padding-left: var(--marginGrid);
+    }
     
     #todaysmenu .container_art img{
         width: 25%;
-        padding: var(--marginGrid);
     }
 }
 }
